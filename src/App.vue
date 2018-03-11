@@ -1,54 +1,51 @@
 <template>
   <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
+    <header class="m-header">
+      <menu-item link="see">See</menu-item>
+      <menu-item link="hear">Hear</menu-item>
+      <menu-item link="home">
+        <logo></logo>
+      </menu-item>
+      <menu-item link="read">Read</menu-item>
+      <menu-item link="watch">Watch</menu-item>
     </header>
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
+
       <router-view></router-view>
     </main>
   </div>
 </template>
 
 <script>
+import Logo from './components/Logo'
+import MenuItem from './components/MenuItem'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    'logo': Logo,
+    'menu-item': MenuItem
+  }
 }
 </script>
 
-<style>
-body {
-  margin: 0;
-}
-
+<style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Futura PT',  Helvetica, Arial, "Nimbus Sans L", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
 
-main {
-  text-align: center;
-  margin-top: 40px;
-}
+.m-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
+  > {
+    display: flex;
+    align-items: flex-start;
 
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
+  }
 }
 </style>
