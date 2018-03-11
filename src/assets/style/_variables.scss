@@ -10,10 +10,6 @@ $blue           : #2090B4;
 $gold           : rgba(173,147,110,1);
 
 
-// Some things for the forms.
-$radio-outside-color: lighten($grey, 30%);
-$radio-selected-color: $gold;
-
 // Base color variables.
 $link           : $gold;
 $visited        : $gold;
@@ -27,24 +23,6 @@ $selection      : $white;
 $base-font-size:   16px;
 $base-line-height: 1.5;
 $indent-amount: 2em;
-
-@font-face {
-  font-family: "Madina Script";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: font-url("madina-script.woff2") format("woff2"),
-       font-url("madina-script.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Futura PT";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: font-url("futura-pt.woff2") format("woff2"),
-       font-url("futura-pt.woff") format("woff");
-}
 
 // The following font family declarations are based on the Microsoft core web
 // fonts which are common fonts available on most computer systems. The DejaVu

@@ -41,11 +41,5 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  > {
-    display: flex;
-    align-items: flex-start;
-
-  }
 }
 </style>

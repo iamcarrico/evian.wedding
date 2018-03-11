@@ -22,6 +22,9 @@ export default {
 
 <style lang="scss">
 .m-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 </style>
