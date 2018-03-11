@@ -1,5 +1,5 @@
 <template>
-  <div class="m-menu-item">
+  <div :class="classesToAdd">
     <router-link :to="link">
       <slot></slot>
     </router-link>
@@ -12,9 +12,24 @@ export default {
   props: [
     'link'
   ],
+  computed: {
+    classesToAdd () {
+      let mainClass = 'm-menu-item'
+      let classesToAdd = [
+        mainClass,
+        `${mainClass}--${this.link}`
+      ]
+
+      if (this.isActive) {
+        classesToAdd.push(`${mainClass}--active`)
+      }
+
+      return classesToAdd
+    }
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js PWA'
+      isActive: false
     }
   }
 }
@@ -25,6 +40,24 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &--home {
+
+    // The logo should be large and on top for small screens.
+    @media (max-width: 600px) {
+      order: -1;
+      width: 100%;
+    }
+  }
+
+  // We do not need spacing on the logo, it is big enough.
+  &:not(&--home) {
+    margin: 0 .5em;
+  }
+
+  a {
+    text-decoration: none;
+  }
 
 }
 </style>
