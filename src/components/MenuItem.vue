@@ -13,6 +13,9 @@ export default {
     'link'
   ],
   computed: {
+    /**
+     * We want to add on dynamic classes to our links.
+     */
     classesToAdd () {
       let mainClass = 'm-menu-item'
       let classesToAdd = [
