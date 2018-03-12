@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <header class="m-header">
       <menu-item link="see">See</menu-item>
       <menu-item link="hear">Hear</menu-item>
@@ -10,9 +10,11 @@
       <menu-item link="watch">Watch</menu-item>
     </header>
     <main>
-
       <router-view></router-view>
     </main>
+    <footer class="m-footer">
+      We wanted to share a piece of such an important day to ourselves with the world. This website's content is shared under the Creative Commons Attribution-ShareAlike 4.0 International (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>), where applicable.
+    </footer>
   </div>
 </template>
 
@@ -35,5 +37,17 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1em;
+}
+
+main {
+  min-height: 40vh;
+}
+
+.m-footer {
+  font-size: .75em;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3em;
 }
 </style>
