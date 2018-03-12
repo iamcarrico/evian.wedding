@@ -43,7 +43,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  font-size: 1.25em;
 
   &--home {
     // The logo should be large and on top for small screens.
