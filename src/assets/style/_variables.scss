@@ -4,7 +4,8 @@
  */
 
 $white          : #FFFFFF;
-$black          : #333333;
+$black          : #2F2F2F;
+$lt-grey        : #D2D2D2;
 $grey           : rgba(129,129,132, 1);
 $blue           : #2090B4;
 $gold           : rgba(173,147,110,1);
@@ -14,7 +15,7 @@ $gold           : rgba(173,147,110,1);
 $link           : $gold;
 $visited        : $gold;
 $selection-bg   : $gold;
-$selection      : $white;
+$selection      : $lt-grey;
 
 
 /**

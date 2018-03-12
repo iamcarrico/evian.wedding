@@ -25,7 +25,7 @@ a {
   }
 
   &:hover, &:focus {
-    color: mix(#000, $link, 50%);
+    color: $lt-grey;
   }
 
   &:active, &.active {

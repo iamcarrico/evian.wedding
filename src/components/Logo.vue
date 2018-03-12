@@ -29,6 +29,10 @@ export default {
     height: auto;
   }
 
+  path {
+    fill: $lt-grey;
+  }
+
   .greenery path {
     fill: $gold;
   }

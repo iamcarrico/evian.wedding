@@ -5,3 +5,7 @@
 @import './variables';
 @import './normalize';
 @import './type';
+
+body {
+  background-color: $black;
+}

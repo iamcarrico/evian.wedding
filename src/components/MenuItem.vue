@@ -46,7 +46,6 @@ export default {
   text-transform: uppercase;
 
   &--home {
-
     // The logo should be large and on top for small screens.
     @media (max-width: 600px) {
       order: -1;
@@ -58,6 +57,16 @@ export default {
   &:not(&--home) {
     margin: 0 .75em;
     padding: .25em;
+  }
+
+  .router-link-active {
+    border-bottom: 2px solid $lt-grey;
+    display: inline-block;
+    text-shadow:
+      2px 2px $black,
+      2px -2px $black,
+      -2px 2px $black,
+      -2px -2px $black;
   }
 
   a {
