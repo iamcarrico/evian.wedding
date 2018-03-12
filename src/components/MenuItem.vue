@@ -58,16 +58,16 @@ export default {
   &:not(&--home) {
     margin: 0 .75em;
     padding: .25em;
-  }
 
-  &:not(&--home) .router-link-active {
-    border-bottom: 2px solid $lt-grey;
-    display: inline-block;
-    text-shadow:
-      2px 2px $black,
-      2px -2px $black,
-      -2px 2px $black,
-      -2px -2px $black;
+    .router-link-active {
+      border-bottom: 2px solid $lt-grey;
+      display: inline-block;
+      text-shadow:
+        2px 2px $black,
+        2px -2px $black,
+        -2px 2px $black,
+        -2px -2px $black;
+    }
   }
 
   a {

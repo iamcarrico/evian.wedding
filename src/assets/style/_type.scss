@@ -7,6 +7,14 @@
        font-url("futura-pt.woff") format("woff");
 }
 
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $body-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $lt-grey;
+}
 
 // Links
 //
