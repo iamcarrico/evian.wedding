@@ -60,7 +60,7 @@ export default {
     padding: .25em;
   }
 
-  .router-link-active {
+  &:not(&--home) .router-link-active {
     border-bottom: 2px solid $lt-grey;
     display: inline-block;
     text-shadow:

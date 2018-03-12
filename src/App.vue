@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'Futura PT',  Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: $futura;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -41,5 +41,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 1em;
 }
 </style>
