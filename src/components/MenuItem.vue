@@ -43,6 +43,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
 
   &--home {
 
@@ -55,7 +56,8 @@ export default {
 
   // We do not need spacing on the logo, it is big enough.
   &:not(&--home) {
-    margin: 0 .5em;
+    margin: 0 .75em;
+    padding: .25em;
   }
 
   a {
