@@ -1,10 +1,19 @@
 @font-face {
-  font-family: "Futura PT";
+  font-family: 'Futura PT';
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: font-url("futura-pt.woff2") format("woff2"),
-       font-url("futura-pt.woff") format("woff");
+  src: url('~/futura-pt.woff2') format('woff2'),
+       url('~/futura-pt.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Madina Script';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('~/madina-script.woff2') format('woff2'),
+       url('~/madina-script.woff') format('woff');
 }
 
 body {
@@ -15,6 +24,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $lt-grey;
 }
+
+h1 {
+  @include madina;
+  margin-top: 0;
+  font-size: 2em;
+}
+
+h2 {
+
+}
+
 
 // Links
 //

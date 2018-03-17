@@ -1,6 +1,6 @@
 <template>
   <div class="m-vows">
-    <strong>{{ from }}'s vows to…</strong>
+    <strong>{{ from }} vows to…</strong>
     <ul>
       <slot></slot>
     </ul>
@@ -17,5 +17,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+.m-vows {
+  strong {
+
+  }
+}
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="l-read">
-    <h2>Our Vows</h2>
+    <h1>Our Vows</h1>
     <vows from="Ian">
       <vow>listen before speaking</vow>
       <vow>patient with your needs</vow>

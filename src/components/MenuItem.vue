@@ -48,7 +48,7 @@ export default {
 
   &--home {
     // The logo should be large and on top for small screens.
-    @media (max-width: 600px) {
+    @media (max-width: 663px) {
       order: -1;
       width: 100%;
     }
