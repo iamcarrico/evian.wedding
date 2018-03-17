@@ -13,7 +13,6 @@ export default {
 <style lang="scss">
 .m-vow {
   list-style-type: none;
-  margin-bottom: .25em;
 }
 
 </style>
