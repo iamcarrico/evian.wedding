@@ -25,14 +25,22 @@ body {
   color: $lt-grey;
 }
 
-h1 {
+h1, h2, h3, h4 {
   @include madina;
+  color: $gold;
+}
+
+h1 {
   margin-top: 0;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 h2 {
+  font-size: 2em;
+}
 
+p {
+  line-height: 1.6;
 }
 
 

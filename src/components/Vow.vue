@@ -1,6 +1,6 @@
 <template>
   <li class="m-vow">
-    … <slot></slot>
+    …<slot></slot>.
   </li>
 </template>
 
@@ -13,6 +13,7 @@ export default {
 <style lang="scss">
 .m-vow {
   list-style-type: none;
+  margin-bottom: .25em;
 }
 
 </style>

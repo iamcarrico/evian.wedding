@@ -1,6 +1,7 @@
 <template>
   <div class="l-read">
     <h1>Our Vows</h1>
+    <p>We spent several months of discussing, writing, re-writing, and editing our vows. We wanted them to be meaningful not just to our relationship, but to our individuals strengths and needs. We find them to be important not just to ourselves, but to have our friends hold us accountable to these vows to each other.</p>
     <vows from="Ian">
       <vow>listen before speaking</vow>
       <vow>patient with your needs</vow>
@@ -40,7 +41,7 @@ export default {
 
 <style lang="scss">
 .l-read {
-  max-width: 760px;
+  max-width: 470px;
   margin: 0 auto;
 }
 
