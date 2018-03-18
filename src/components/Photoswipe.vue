@@ -117,23 +117,25 @@
           if (realViewportWidth < 1000) {
             this.currentSize = 'thumb'
           } else {
-            this.currentSize = '2000'
+            this.currentSize = 'medium'
           }
         })
 
         this.photoswipe.listen('gettingData', (index, item) => {
           // Check if we're offline, if we are then we always use thumbs.
           var isOffline = 'onLine' in navigator && !navigator.onLine
+          var srcFolder = this.currentSize
 
           if (this.currentSize === 'thumb' || isOffline) {
-            item.src = item.thumb.src
+            srcFolder = 'thumb'
             item.w = item.thumb.w
             item.h = item.thumb.h
           } else {
-            item.src = item.medium.src
             item.w = item.medium.w
             item.h = item.medium.h
           }
+
+          item.src = `/static/photos/${srcFolder}/evian-${item.id}.jpg`
         })
 
         this.photoswipe.init()

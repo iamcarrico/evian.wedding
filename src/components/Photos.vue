@@ -6,6 +6,7 @@
 
 <script>
 import Photo from './Photo'
+import PhotoJson from '../assets/images.json'
 
 export default {
   name: 'photos',
@@ -22,73 +23,18 @@ export default {
   },
   data () {
     return {
-      photos: [
-        {
-          id: 1,
-          title: 'This is the text I care about',
-          thumb: {
-            src: '/static/photos/thumbs/evian-1.jpg',
-            w: 1999,
-            h: 1333
-          },
-          medium: {
-            src: '/static/photos/medium/evian-1.jpg',
-            w: 1999,
-            h: 1333
-          }
-        },
-        {
-          id: 2,
-          title: 'This is the text I care about',
-          thumb: {
-            src: '/static/photos/thumbs/evian-2.jpg',
-            w: 1335,
-            h: 1999
-          },
-          medium: {
-            src: '/static/photos/medium/evian-2.jpg',
-            w: 1335,
-            h: 1999
-          }
-        },
-        {
-          id: 3,
-          title: 'This is the text I care about',
-          thumb: {
-            src: '/static/photos/thumbs/evian-3.jpg',
-            w: 1335,
-            h: 1999
-          },
-          medium: {
-            src: '/static/photos/medium/evian-3.jpg',
-            w: 1335,
-            h: 1999
-          }
-        },
-        {
-          id: 4,
-          title: 'This is the text I care about',
-          thumb: {
-            src: '/static/photos/thumbs/evian-4.jpg',
-            w: 1999,
-            h: 1333
-          },
-          medium: {
-            src: '/static/photos/medium/evian-4.jpg',
-            w: 1333,
-            h: 1999
-          }
-        }
-      ]
+      photos: PhotoJson
     }
   }
 }
 </script>
 
 <style lang="scss">
-
 .m-photos {
-
+  display: flex;
+  max-width: 85%;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 </style>

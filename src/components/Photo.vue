@@ -12,7 +12,7 @@ export default {
   computed: {
     // a computed getter
     imageSrc: function () {
-      return `/static/photos/thumbs/evian-${this.photo.id}.jpg`
+      return `/static/photos/thumb/evian-${this.photo.id}.jpg`
     }
   },
   methods: {
@@ -29,7 +29,11 @@ export default {
 
 <style lang="scss">
 .m-photo {
-
+  flex: 24%;
+  max-width: 24%;
+  padding: .25em;
+  overflow: hidden;
+  max-height: 300px;
 }
 
 </style>
