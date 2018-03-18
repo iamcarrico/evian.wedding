@@ -6,6 +6,10 @@
 @import './normalize';
 @import './type';
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: $black;
   padding: 0 1em;

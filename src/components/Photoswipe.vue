@@ -95,7 +95,7 @@
         const opts = Object.assign({
           index: index,
           getThumbBoundsFn (index) {
-            const thumbnail = document.querySelectorAll('.m-photos--photo')[index]
+            const thumbnail = document.querySelectorAll('.m-photo')[index]
             const pageYScroll = window.pageYOffset ||
                   document.documentElement.scrollTop ||
                   document.body.scrollTop ||

@@ -32,9 +32,17 @@ export default {
 <style lang="scss">
 .m-photos {
   display: flex;
-  max-width: 85%;
+  width: 100%;
   flex-wrap: wrap;
   margin: 0 auto;
+
+  align-items: center;
+
+
+  @media (min-width: 900px) {
+
+    max-width: 85%;
+  }
 }
 
 </style>

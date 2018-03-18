@@ -1,8 +1,6 @@
 <template>
-  <div class="m-photo">
-    <img class="m-photos--photo"
-        :src="imageSrc" @click="openPhotoSwipe">
-  </div>
+  <img class="m-photo"
+      :src="imageSrc" @click="openPhotoSwipe">
 </template>
 
 <script>
@@ -29,11 +27,14 @@ export default {
 
 <style lang="scss">
 .m-photo {
-  flex: 24%;
-  max-width: 24%;
+  width: 33%;
+  height: auto;
   padding: .25em;
-  overflow: hidden;
-  max-height: 300px;
+
+  @media (min-width: 850px) {
+    flex: 25%;
+    max-width: 25%;
+  }
 }
 
 </style>

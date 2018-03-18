@@ -1,13 +1,16 @@
 var sizeOf = require('image-size');
 var fs = require('fs');
 
+var imageTitles = require('./src/assets/imageTitles')
+
 var outputJson = [];
 
 
 for (i = 1; i < 121; i++) {
+
   var thisImage = {
     id: i,
-    title: '',
+    title: imageTitles[i],
   };
 
   ['thumb', 'medium'].forEach((size) => {
