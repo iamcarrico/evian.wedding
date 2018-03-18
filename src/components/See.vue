@@ -1,15 +1,22 @@
 <template>
-  <div class="see">
-
+  <div class="l-see">
+    <photos></photos>
   </div>
 </template>
 
 <script>
+import Photos from './Photos'
+
 export default {
-  name: 'see'
+  name: 'see',
+  components: {
+    'photos': Photos
+  }
 }
 </script>
 
 <style lang="scss">
+.l-see {
 
+}
 </style>
