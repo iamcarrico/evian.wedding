@@ -6,14 +6,14 @@ var imageTitles = require('./src/assets/imageTitles')
 var outputJson = [];
 
 
-for (i = 1; i < 121; i++) {
+for (i = 1; i <= 133; i++) {
 
   var thisImage = {
     id: i,
     title: imageTitles[i],
   };
 
-  ['thumb', 'medium'].forEach((size) => {
+  ['thumb', 'medium', 'large'].forEach((size) => {
     var dimensions = sizeOf(`static/photos/${size}/evian-${i}.jpg`);
     thisImage[size] = {
       w: dimensions.width,
