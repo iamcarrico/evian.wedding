@@ -13,7 +13,7 @@
       <router-view></router-view>
     </main>
     <footer class="m-footer">
-      We wanted to share a piece of such an important day to ourselves with the world. This website's content is shared under the Creative Commons Attribution-ShareAlike 4.0 International (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>), where applicable.
+      We wanted to share a piece of such an important day to ourselves with the world. A <router-link to="thanks">special thanks</router-link> to our amazing <router-link to="thanks">vendors</router-link> who helped put together this day for us. This website's content is shared under the Creative Commons Attribution-ShareAlike 4.0 International (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>), where applicable.
     </footer>
   </div>
 </template>
@@ -46,8 +46,7 @@ main {
 .m-footer {
   font-size: .75em;
   max-width: 760px;
-  margin: 0 auto;
+  margin: 3em auto 2em;
   text-align: center;
-  margin-top: 3em;
 }
 </style>

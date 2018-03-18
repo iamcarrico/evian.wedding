@@ -5,6 +5,7 @@ import Read from '@/components/Read'
 import See from '@/components/See'
 import Watch from '@/components/Watch'
 import Hear from '@/components/Hear'
+import Thanks from '@/components/Thanks'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/hear',
       name: 'Hear',
       component: Hear
+    },
+    {
+      path: '/thanks',
+      name: 'Thanks',
+      component: Thanks
     }
   ]
 })
