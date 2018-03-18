@@ -15,6 +15,11 @@ export default {
 
 .m-spotify {
   text-align: center;
+
+  iframe {
+    width: 100%;
+    max-width: 375px;
+  }
 }
 
 </style>

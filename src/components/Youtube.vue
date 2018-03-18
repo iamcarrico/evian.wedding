@@ -15,6 +15,18 @@ export default {
 
 .m-youtube {
   text-align: center;
+  position: relative;
+  padding-bottom: percentage(9/16);
+
+  iframe {
+    left: 0;
+  	height: 100%;
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+    max-width: 560px;
+  }
+
 }
 
 </style>
