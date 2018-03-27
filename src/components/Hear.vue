@@ -1,5 +1,6 @@
 <template>
   <div class="l-hear">
+    <h1>Listen to the playlist</h1>
     <p>
       We have compiled the songs that played during the reception. We want to thank Jacob from <a href="https://goldlineentertainment.net/">Goldline Entertainment</a> for putting together this playlist for us.
     </p>

@@ -1,5 +1,6 @@
 <template>
   <div class="l-see">
+    <h1>The photos</h1>
     <photos></photos>
   </div>
 </template>
