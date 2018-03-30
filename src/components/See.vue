@@ -18,6 +18,12 @@ export default {
 
 <style lang="scss">
 .l-see {
+  max-width: 100%;
+  margin: 0 auto;
 
+  @media (min-width: 900px) {
+
+    max-width: 85%;
+  }
 }
 </style>
