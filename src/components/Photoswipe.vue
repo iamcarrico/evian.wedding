@@ -114,10 +114,12 @@
         this.photoswipe.listen('beforeResize', () => {
           let realViewportWidth = this.photoswipe.viewportSize.x * window.devicePixelRatio
 
-          if (realViewportWidth < 700) {
+          if (realViewportWidth < 600) {
             this.currentSize = 'thumb'
-          } else {
+          } else if (realViewportWidth < 1800) {
             this.currentSize = 'medium'
+          } else {
+            this.currentSize = 'large'
           }
         })
 
