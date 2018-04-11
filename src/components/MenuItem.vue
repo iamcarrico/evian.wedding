@@ -1,6 +1,6 @@
 <template>
   <div :class="classesToAdd">
-    <router-link :to="link" exact>
+    <router-link :to="link" :exact="exact">
       <slot></slot>
     </router-link>
   </div>
@@ -10,7 +10,8 @@
 export default {
   name: 'menu-item',
   props: [
-    'link'
+    'link',
+    'exact'
   ],
   computed: {
     /**

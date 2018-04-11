@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Read from '@/components/Read'
+import Reading from '@/components/Reading'
+import OurVows from '@/components/OurVows'
 import See from '@/components/See'
 import Photos from '@/components/Photos'
 import Instagram from '@/components/Instagram'
@@ -21,7 +23,17 @@ export default new Router({
     {
       path: '/read',
       name: 'Read',
-      component: Read
+      component: Read,
+      children: [
+        {
+          path: '',
+          component: OurVows
+        },
+        {
+          path: 'phil',
+          component: Reading
+        }
+      ]
     },
     {
       path: '/see',

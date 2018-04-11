@@ -1,8 +1,8 @@
 <template>
   <div class="l-see">
     <sub-menu>
-      <menu-item link="/see">Official Photos</menu-item>
-      <menu-item link="/see/instagram">Instagram</menu-item>
+      <menu-item link="/see" exact>Official Photos</menu-item>
+      <menu-item link="/see/instagram" exact>Instagram</menu-item>
     </sub-menu>
     <h1>The photos</h1>
     <router-view></router-view>
