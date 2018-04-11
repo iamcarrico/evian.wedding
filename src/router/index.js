@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Read from '@/components/Read'
 import See from '@/components/See'
+import Photos from '@/components/Photos'
+import Instagram from '@/components/Instagram'
 import Watch from '@/components/Watch'
 import Hear from '@/components/Hear'
 import Thanks from '@/components/Thanks'
@@ -24,7 +26,17 @@ export default new Router({
     {
       path: '/see',
       name: 'See',
-      component: See
+      component: See,
+      children: [
+        {
+          path: '',
+          component: Photos
+        },
+        {
+          path: 'instagram',
+          component: Instagram
+        }
+      ]
     },
     {
       path: '/watch',

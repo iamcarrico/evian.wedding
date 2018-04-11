@@ -1,13 +1,13 @@
 <template>
   <div>
     <header class="m-header">
-      <menu-item link="see">See</menu-item>
-      <menu-item link="hear">Hear</menu-item>
+      <menu-item link="/see">See</menu-item>
+      <menu-item link="/hear">Hear</menu-item>
       <menu-item link="home">
         <logo></logo>
       </menu-item>
-      <menu-item link="read">Read</menu-item>
-      <menu-item link="watch">Watch</menu-item>
+      <menu-item link="/read">Read</menu-item>
+      <menu-item link="/watch">Watch</menu-item>
     </header>
     <main>
       <router-view></router-view>

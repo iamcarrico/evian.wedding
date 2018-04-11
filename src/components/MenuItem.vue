@@ -1,6 +1,6 @@
 <template>
   <div :class="classesToAdd">
-    <router-link :to="link">
+    <router-link :to="link" exact>
       <slot></slot>
     </router-link>
   </div>
@@ -20,7 +20,7 @@ export default {
       let mainClass = 'm-menu-item'
       let classesToAdd = [
         mainClass,
-        `${mainClass}--${this.link}`
+        `${mainClass}--${this.link.replace('/', '')}`
       ]
 
       if (this.isActive) {
