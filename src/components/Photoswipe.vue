@@ -137,7 +137,7 @@
             item.h = item.medium.h
           }
 
-          item.src = `/static/photos/${srcFolder}/evian-${item.id}.jpg`
+          item.src = `https://static.evian.wedding/static/photos/${srcFolder}/evian-${item.id}.jpg`
         })
 
         this.photoswipe.init()
