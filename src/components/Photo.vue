@@ -10,7 +10,7 @@ export default {
   computed: {
     // a computed getter
     imageSrc: function () {
-      return `/static/photos/thumb/evian-${this.photo.id}.jpg`
+      return `https://static.evian.wedding/static/photos/thumb/evian-${this.photo.id}.jpg`
     }
   },
   methods: {
